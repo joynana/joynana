@@ -1,0 +1,79 @@
+text = 'you are genius'
+text[-5:-8]
+print(text[-5:-8])
+#이상 이하를 사용할 때 필요한 것은 >=(부등호와 등호 사이의 간격을 띄우면 안된다)
+
+tCard = 10000
+age = int(input('나이를 입력하세요'))
+if age >= 7 and age <= 12 :  #크거나 같고 작거나 같을 때 and age를 각각의 식에 한번씩 다 써주어야 한다. 예를 들어 (age >=5 and <=10) 이런식으로 변수를 하나라도 빠뜨리면 안됨.
+   print(int(tCard - 730)) # card -= 730
+elif age >= 13 and age <=18:
+   print(int(tCard -1010))
+elif age >= 19:
+   print(int(tCard -1450))
+else:
+   print(int(tCard))
+
+   #print('잔액은 {}원 입니다.".format(card))
+
+   
+count = 0
+while count <10:
+   count +=1
+   print('나무가 {}번 넘어졌습니다.'.format(count))
+   if count == 10:
+      print('나무가 넘어갑니다')
+      break
+# ctrl + c를 누르면 무한루프를 끝낼 수 있다.
+
+#무한루프로 돌려주기
+while True:
+   count +=1
+   print('나무를 {}번 쓰러뜨렸습다.'.format(count))
+   
+
+
+
+#기다리기 기능을 사용하기 위해 time 모듈을 사용하다.
+# import random, time으로도 쓸 수 있다.
+
+import random
+import time
+
+while True:
+   goal = random.randint(1,10) # 랜덤하게 숫자를 뽑아주는 기능이다. 
+   time.sleep(1)
+   print('숫자를 섞었습니다')
+
+   time.sleep(1) #1초 기다리기 코드
+
+
+   num = int(input('1부터 10사이의 숫자를 선택하시오'))
+   if num == goal:
+      print('정답')
+      break
+   else:
+      print('오답이야 ㅋㅋㅋㅋ')
+      '''
+
+#list의 특징
+
+empty =[]
+empty.append('이쁜 징징이')
+empty.append('깐깐징어는 내꺼')
+empty.insert(1,'나는 스폰지밥이 좋아')
+print(empty)
+
+
+#모듈 당황스러운 것
+#리스트 내장 함수 당황스러운 것. insert 나 append 어떻게 썼었는지 다 까먹었음.
+
+
+# for문 중첩하기 : 구구단 프린트
+
+for i in range(2,10):
+   for j in range(1,10):
+      print ('{}x{} = {}'.format(i,j, i*j))
+
+
+#프로그램에서 어떤 특정한 기능을 하기위해 모아놓은 것들
