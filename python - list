@@ -1,0 +1,7 @@
+#파이썬 리스트
+중첩 리스트: 요소로 리스트가 올 수도 있다.
+>>> netflex = [['moviestar','3DHERO','MANDATER'],[1,2,3]]
+>>> 
+>>> netflex
+[['moviestar', '3DHERO', 'MANDATER'], [1, 2, 3]]
+>>> 
