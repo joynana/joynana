@@ -1,0 +1,50 @@
+me = ['여자','25살','여름을 좋아함','영통구']
+me[1:3] = [17]
+
+print(me)
+
+score = [95.5,88.0,82.6,80.0]
+score[1:3] = [90.0,80.5]
+#오답: print('최종점수:%d'.format(score))
+print('최종점수:{}'.format(score))
+
+#평균 구하기
+print(sum(score)/4)
+print('평균점수:{}'.format(sum(score)/4))
+
+grade = 2
+group = 5
+num = 13
+name = 'Iram'
+
+print('{}학년{}반 {}번 {}입니다.'.format(grade,group,num,name))
+playlist = ['달라달라','솔로','밤편지','아이돌']
+playlist.append('아카시아 꽃')
+print(playlist)
+
+students = ['공민재','공채은','김민교''이이안']
+students.insert(1,'은진단')
+print(students)
+
+items = ['에너지 드링크','땟목','진통제']
+items.remove('진통제')
+print(items)
+
+input('이름:')
+input()
+input(100)
+
+age = input('현재 나이를 입력하세요:')
+#몇 년 후에 성인이 되는지 계산하여 출력합니다.
+print('당신은 {}년 후에 성인이 됩니다.'.format(20-int(age)))
+
+#'닉네임을 입력하여 리스트 'group'에 추가하세요.
+#출력예시에 맞게 출력하세요.
+
+group = ['디랩','chole','daddy']
+print('로그인하기 위해 닉네임을 입력하세요.')
+
+user = input('닉네임:')
+print('{}님, 로그인 되었습니다.'.format(user))
+group.append(user)
+print('현재 접속중: {}'.format(group))
