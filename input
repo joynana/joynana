@@ -1,0 +1,15 @@
+drink = input('음료를 선택해주세요:')
+if drink == '콜라':
+
+	print('금액이 부족합니다')
+	
+elif drink == '물':
+	money = money - 1000 
+	print('음료와 거스름돈이 나옵니다')
+elif drink == '오렌지쥬스':
+	money = 0
+	print('음료가 나옵니다')
+else:
+	print('없는 음료입니다.')
+	
+print('남은금액:{}원'.format(money))
