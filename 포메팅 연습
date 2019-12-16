@@ -1,0 +1,53 @@
+print('디랩 피자가게 관리 프로그램입니다.')
+menu = [['하와이안 피자','포테이토 피자'],
+        ['스프라이트','오렌지 쥬스','콜라','청포도 에이드']]
+print('피자종류: {}'.format(menu[0])) # 포메팅이 어디에 쓰이는 것인지에 대해 이해가 불충분
+print('음료종류: {}'.format(menu[1]))
+print('-----------------------------------------')
+
+pizza = input('신메뉴 피자:')
+m = menu[0]
+m.append(pizza)
+print(m)
+
+#계단식 복습: 포메팅
+today = '3월 9일'
+lowerTemp = 2
+highTemp = 12
+dust = '보통'
+
+#오답정리: 포메팅
+#print('최저기온은%d도,낮 최고기온은 %d도 이며, 미세먼지 농도는 전국이 %str입니다'%(lowerTemp,highTemp,dust))
+print('최저기온은%d도,낮 최고기온은 %d도 이며, 미세먼지 농도는 전국이 %s입니다'%(lowerTemp,highTemp,dust))
+
+print('최저기온은{}도, 낮 최고기온은 {}도이며, 미세먼지 농도는 전국이{}입니다.'.format(lowerTemp,highTemp,dust))
+
+word = 'success'
+num = word.count('s')
+
+#오답
+# print('{}에는 s가 {}개 있습니다.'.format(word.upper(word),num)
+# list에서 l.append('추가할 무엇')이 형식과 헛깔림
+
+print('{}에는 s가 {}개 있습니다'.format(word.upper(),num))
+
+print('%s에는 s가 %d개 있습니다.'%(word.upper(),num))
+
+grade = 2
+group = 5
+num = 5
+name = '넛'
+print('%d학년 %d반 %d번 %s입니다'%(grade,group,num,name))
+
+print('{}학년{}반{}번 {}입니다.'.format(grade,group,num,name))
+
+print('"동영상 조회수: %d회" %120')
+num = 120
+print('동영상 조회수: %d회'%num)
+distance = 288.61
+print('"대구까지의 거리: %fkm"%288.61')
+print('대구까지의 거리:%dkm'%288.61)
+name = 'D.LAB'
+print('"%s님, 생일을 축하합니다."%"D.LAB"')
+
+print('%s님, 생일을 축하합니다.'%name)
